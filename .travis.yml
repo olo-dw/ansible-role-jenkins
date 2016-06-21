@@ -46,6 +46,29 @@ env:
     prefix: jenkins
     http_port: 8080
 
+  - distribution: ubuntu
+    version: 16.04
+    init: /sbin/init
+    run_opts: ""
+    site: test.yml
+    prefix: ''
+    http_port: 8080
+  - distribution: ubuntu
+    version: 16.04
+    init: /sbin/init
+    run_opts: ""
+    site: test-http-port.yml
+    prefix: ''
+    http_port: 8081
+  - distribution: ubuntu
+    version: 16.04
+    init: /sbin/init
+    run_opts: ""
+    site: test-prefix.yml
+    prefix: jenkins
+    http_port: 8080
+
+
 services:
   - docker
 
